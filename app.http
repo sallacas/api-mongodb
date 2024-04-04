@@ -1,0 +1,32 @@
+### Get Clients
+GET http://localhost:3000/api/client/
+
+### Get Client by ID
+GET http://localhost:3000/api/client/66040c901664fef9b2a5f084
+### Create Client
+POST http://localhost:3000/api/client/
+Content-Type: application/json
+
+{
+    "firstName": "xxx",
+    "lastName": "xxx",
+    "document": 10002,
+    "email": "xxx@gmail.com",
+    "phone": 312111,
+    "address": "xxx"
+}
+### Update Client
+PUT http://localhost:3000/api/client/660409ea0c01dcb593358a13
+Content-Type: application/json
+
+{
+    "firstName": "Johnatan",
+    "lastName": "Silva",
+    "document": 10002,
+    "email": "johnsilva@hotmail.com",
+    "phone": 312111,
+    "address": "Clle 14 - 14 12"
+}
+
+### Delete Client
+DELETE http://localhost:3000/api/client/66040c901664fef9b2a5f084
