@@ -10,6 +10,7 @@ app.use(cors())
 app.use(express.json())
 app.disable('x-powered-by')
 app.use('/api/client', require('../routes/clients'))
+app.use('/api/supplier', require('../routes/suppliers'))
 
 app.get('/', (req, res) => {
     res.send('Hello World!')

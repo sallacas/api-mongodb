@@ -30,3 +30,36 @@ Content-Type: application/json
 
 ### Delete Client
 DELETE http://localhost:3000/api/client/66040c901664fef9b2a5f084
+
+### Get Supplier
+GET http://localhost:3000/api/supplier/
+
+### Get Supplier by ID
+GET http://localhost:3000/api/supplier/6615832a4e17a666a4e85685
+
+### Create Supplier
+POST http://localhost:3000/api/supplier/
+Content-Type: application/json
+
+{
+    "fullname": "Mongose INC",
+    "address": "123 Street",
+    "nit": 100890123,
+    "email": "mongose@gmail.com",
+    "phone": 312111
+}
+
+### Update Supplier
+PUT http://localhost:3000/api/supplier/6615832a4e17a666a4e85685
+Content-Type: application/json
+
+{
+    "fullname": "Docker",
+    "address": "123 Avenue",
+    "nit": 8009001,
+    "email": "docker@gmail.com",
+    "phone": 330123123
+}
+
+### Delete Client
+DELETE http://localhost:3000/api/supplier/661580df25cee399dee7e5bf
